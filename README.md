@@ -6,7 +6,7 @@ Track orderable, open government data of the City of Zurich
 ## Datasets
 
 | Name | Description | Files |
-|---|---|---|
+| :-- | :-- | :-- |
 | [Baumkataster](https://data.stadt-zuerich.ch/dataset/geo_baumkataster) | tree register | [gsz.baumkataster_baumstandorte.csv](https://github.com/1-Byte/ogd-stadt-zuerich-tracker/raw/baumkataster/gsz.baumkataster_baumstandorte.csv) |
 
 
