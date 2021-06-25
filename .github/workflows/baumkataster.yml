@@ -18,6 +18,7 @@ jobs:
       - run: node order.js orders/baumkataster.json order.zip
       - run: unzip -v order.zip
       - run: unzip -j -x -d data order.zip bestellung.txt data/gsz.baumkataster_baumstandorte.csv
+      - run: echo '*.csv filter=lfs diff=lfs merge=lfs -text' > data/.gitattributes
       - uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: baumkataster
