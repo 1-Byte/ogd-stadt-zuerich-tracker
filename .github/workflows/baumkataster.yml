@@ -1,0 +1,24 @@
+name: baumkataster
+
+on:
+  workflow_dispatch: ~
+  schedule:
+    - cron: '0 0 * * 2'
+
+jobs:
+  update:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: echo "COMMIT_MESSAGE=Baumkataster $(date '+%Y-%m-%d')" >> $GITHUB_ENV
+      - run: npm install
+      - run: node order.js orders/baumkataster.json order.zip
+      - run: unzip -v order.zip
+      - run: unzip -j -x -d data order.zip bestellung.txt data/gsz.baumkataster_baumstandorte.csv
+      - uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: baumkataster
+          folder: data
+          commit-message: ${{ env.COMMIT_MESSAGE }}

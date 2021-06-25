@@ -1,0 +1,17 @@
+{
+  "order": {
+    "email": "",
+    "extent": "",
+    "extent_name": "full",
+    "geodatensatz_id": 2843,
+    "geoportal_id": "Baumkataster",
+    "geoportal_name": "Baumkataster",
+    "geoportal_sort_time_started": 0,
+    "selected_format": {
+      "fme_name": "CSV2",
+      "id": 10008,
+      "name": "Comma Separated Values (.csv)"
+    },
+    "stzh": true
+  }
+}
