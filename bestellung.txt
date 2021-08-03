@@ -2,5 +2,5 @@
 Name des Geodatensatzes: Baumkataster 
 Name des Ausschnittes: full
 Ausschnitt (falls definiert): 0, 0, 0,0 
-Zeitpunkt der Bearbeitung: 27.07.2021 - 03:03 
+Zeitpunkt der Bearbeitung: 03.08.2021 - 03:06 
 
